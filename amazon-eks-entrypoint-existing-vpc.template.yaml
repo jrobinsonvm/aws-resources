@@ -349,12 +349,12 @@ Parameters:
     Default: Disabled
     Description: Configure access to the Kubernetes API server endpoint from outside of your VPC.
   AdditionalEKSAdminUserArn:
-    Default: ""
+    Default: "arn:aws:iam::591380524330:user/cloudformation"
     AllowedPattern: '^arn:(aws|aws-cn|aws-us-gov):iam::[0-9]{12}:.*|^$'
     Description: "(Optional) IAM user Amazon Resource Name (ARN) to be granted administrative access to the EKS cluster."
     Type: String
   AdditionalEKSAdminRoleArn:
-    Default: ""
+    Default: "arn:aws:iam::591380524330:role/special-eks"
     AllowedPattern: '^arn:(aws|aws-cn|aws-us-gov):iam::[0-9]{12}:.*|^$'
     Description: "(Optional) IAM role Amazon Resource Name (ARN) to be granted administrative access to the EKS cluster."
     Type: String
